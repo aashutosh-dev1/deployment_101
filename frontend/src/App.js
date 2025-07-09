@@ -13,7 +13,8 @@ function App() {
   const fetchDeploymentInfo = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3001/api/deployment-info');
+      // const response = await fetch('http://localhost:3001/api/deployment-info');
+      const response = await fetch('https://deployment-101-m6ky.onrender.com/api/deployment-info');
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
